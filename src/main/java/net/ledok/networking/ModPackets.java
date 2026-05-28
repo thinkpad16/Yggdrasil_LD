@@ -15,30 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
 import java.util.List;
-import java.util.UUID;
-
 public class ModPackets {
-
-    public record ReputationSyncPayload(UUID playerUuid, int reputation) implements CustomPacketPayload {
-        public static final Type<ReputationSyncPayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(YggdrasilLdMod.MOD_ID, "reputation_sync"));
-
-        public static final StreamCodec<FriendlyByteBuf, ReputationSyncPayload> STREAM_CODEC = StreamCodec.of(
-                (buf, payload) -> payload.write(buf), ReputationSyncPayload::new);
-
-        public ReputationSyncPayload(FriendlyByteBuf buf) {
-            this(buf.readUUID(), buf.readInt());
-        }
-
-        public void write(FriendlyByteBuf buf) {
-            buf.writeUUID(playerUuid);
-            buf.writeInt(reputation);
-        }
-
-        @Override
-        public Type<? extends CustomPacketPayload> type() {
-            return TYPE;
-        }
-    }
 
     public record SyncLootBoxesPayload(List<LootBoxDefinition> definitions) implements CustomPacketPayload {
         public static final Type<SyncLootBoxesPayload> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(YggdrasilLdMod.MOD_ID, "sync_loot_boxes"));
@@ -180,7 +157,6 @@ public class ModPackets {
     }
 
     public static void registerS2CPackets() {
-        PayloadTypeRegistry.playS2C().register(ReputationSyncPayload.TYPE, ReputationSyncPayload.STREAM_CODEC);
         PayloadTypeRegistry.playS2C().register(SyncLootBoxesPayload.TYPE, SyncLootBoxesPayload.STREAM_CODEC);
     }
 

@@ -150,13 +150,6 @@
 
   "message.yggdrasil_ld.elytra_boost_disabled": "You can't use fireworks in this dimension if your armor more than 19!",
   "message.yggdrasil_ld.raid_start": "%1$s has started a raid against %2$s!",
-
-  "message.yggdrasil_ld.pvp_cooldown": "You cannot gain or lose reputation by killing this player again so soon.",
-  "command.yggdrasil_ld.leaderboard.top_title": "--- Top Heroes ---",
-  "command.yggdrasil_ld.leaderboard.bottom_title": "--- Most Wanted ---",
-  "command.yggdrasil_ld.leaderboard.empty": "No players found for this leaderboard.",
-  "command.yggdrasil_ld.tozero.success": "Moved %s's reputation %d%% closer to zero. New reputation: %d",
-  "command.yggdrasil_ld.tozero.already_zero": "%s's reputation is already 0.",
   "item.yggdrasil_ld.healing_potion.tooltip.reset_scroll": "Resets your skill tree (You don't loose points)",
   "item.yggdrasil_ld.healing_potion.tooltip.dripstone": "Creates pointed dripstone above random player",
   "item.yggdrasil_ld.skill_xp_item.tooltip": "On use gives %d experience points for skill tree",

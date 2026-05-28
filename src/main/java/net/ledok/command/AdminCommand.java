@@ -29,19 +29,6 @@ public class AdminCommand {
                                 })
                         )
                 )
-                .then(Commands.literal("reputation_change")
-                        .then(Commands.argument("enabled", BoolArgumentType.bool())
-                                .executes(context -> {
-                                    boolean enabled = BoolArgumentType.getBool(context, "enabled");
-                                    YggdrasilLdMod.CONFIG.reputation_change_enabled = enabled;
-
-                                    String status = enabled ? "enabled" : "disabled";
-                                    context.getSource().sendSuccess(() -> Component.literal("Automatic reputation change is now " + status), true);
-
-                                    return 1;
-                                })
-                        )
-                )
         );
     }
 }
