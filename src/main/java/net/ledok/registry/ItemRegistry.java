@@ -85,6 +85,26 @@ public class ItemRegistry {
             new SkillXpItem(new Item.Properties().stacksTo(64),500),
             "xp_item_5"
     );
+    public static final Item XP_ITEM_6 = ItemInit.register(
+            new SkillXpItem(new Item.Properties().stacksTo(64),700),
+            "xp_item_6"
+    );
+    public static final Item XP_ITEM_7 = ItemInit.register(
+            new SkillXpItem(new Item.Properties().stacksTo(64),900),
+            "xp_item_7"
+    );
+    public static final Item XP_ITEM_8 = ItemInit.register(
+            new SkillXpItem(new Item.Properties().stacksTo(64),1200),
+            "xp_item_8"
+    );
+    public static final Item XP_ITEM_9 = ItemInit.register(
+            new SkillXpItem(new Item.Properties().stacksTo(64),2000),
+            "xp_item_9"
+    );
+    public static final Item XP_ITEM_10 = ItemInit.register(
+            new SkillXpItem(new Item.Properties().stacksTo(64),10000),
+            "xp_item_10"
+    );
 
     public class ItemInit {
         public static Item register(Item item, String id) {

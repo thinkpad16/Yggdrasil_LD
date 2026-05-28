@@ -135,6 +135,12 @@
   "item.yggdrasil_ld.xp_item_3": "Potion of experience 3",
   "item.yggdrasil_ld.xp_item_4": "Potion of experience 4",
   "item.yggdrasil_ld.xp_item_5": "Potion of experience 5",
+  "item.yggdrasil_ld.xp_item_6": "Potion of experience 6",
+  "item.yggdrasil_ld.xp_item_7": "Potion of experience 7",
+  "item.yggdrasil_ld.xp_item_8": "Potion of experience 8",
+  "item.yggdrasil_ld.xp_item_9": "Potion of experience 9",
+  "item.yggdrasil_ld.xp_item_10": "Potion of experience 10",
+
 
   "itemGroup.yggdrasil_ld.main": "Yggdrasil Items",
   "tooltip.yggdrasil_ld.loot_box.contains": "Contains loot from:",
