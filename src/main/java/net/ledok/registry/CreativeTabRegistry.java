@@ -23,6 +23,11 @@ public class CreativeTabRegistry {
                 output.accept(new ItemStack(ItemRegistry.XP_ITEM_3));
                 output.accept(new ItemStack(ItemRegistry.XP_ITEM_4));
                 output.accept(new ItemStack(ItemRegistry.XP_ITEM_5));
+                output.accept(new ItemStack(ItemRegistry.XP_ITEM_6));
+                output.accept(new ItemStack(ItemRegistry.XP_ITEM_7));
+                output.accept(new ItemStack(ItemRegistry.XP_ITEM_8));
+                output.accept(new ItemStack(ItemRegistry.XP_ITEM_9));
+                output.accept(new ItemStack(ItemRegistry.XP_ITEM_10));
 
                 output.accept(new ItemStack(ItemRegistry.ANCIENT_ICE_SHARD));
                 output.accept(new ItemStack(ItemRegistry.NETHERITE_BOTTLE));
